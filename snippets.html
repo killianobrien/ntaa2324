@@ -1,0 +1,3 @@
+<!-- iframe trick to include another html file -->
+
+<iframe src="included.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
